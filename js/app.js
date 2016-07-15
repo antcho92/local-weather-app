@@ -9,6 +9,7 @@ $(document).ready(function() {
 		  lat = position.coords.latitude
 		  long = position.coords.longitude;
 
+            // AJAX request to openweathermap. Uses the previously found lat and long from the geolocation request by the browser.
 			$.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&APPID=8722afcf35360fafa45a494291f3b1b6&units=imperial', function(weather) {
 				$('#weather').text(weather.weather[0].description);
 				temp = weather.main.temp;
@@ -29,6 +30,6 @@ $(document).ready(function() {
 					}
 				});
 			}); //end of weather api
-		}); //end of location function 
-	} // end of location if
+		}); //end of location function
+	} 
 });
