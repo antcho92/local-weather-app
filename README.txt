@@ -1,4 +1,5 @@
 A local weather app created for a Free Code Camp project. It shows your local weather based off your geolocation. The weather icon changes based on the description of the weather.
+You can click on the temperature to change the units between Celsius and Fahrenheit.
 
 It was made using jQuery and the Open Weather Map API. It uses AJAX to update your local weather using the geolocation API.
 
